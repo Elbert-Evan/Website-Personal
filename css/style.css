@@ -416,29 +416,21 @@ span {
     }
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    position: absolute;
-    top: 100%;          /* muncul di bawah header */
-    left: -100%;        /* sembunyikan di luar layar */
-    width: 100%;
-    background: #111;   /* warna background menu */
-    flex-direction: column;
-    text-align: center;
-    transition: 0.3s;   /* animasi slide */
-    padding: 1rem 0;
-  }
+.navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
 
-  .navbar.active {
-    left: 0;            /* tampilkan menu */
-  }
-
-  #menu-icon {
-    display: block;     /* tampilkan ikon menu */
-    font-size: 2rem;
-    cursor: pointer;
-  }
-}
+    .navbar.active {
+        display: block;
+    }
 
     .navbar a {
         display: block;
@@ -520,4 +512,5 @@ span {
     }
 
 }
+
 
