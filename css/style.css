@@ -25,6 +25,7 @@ html {
     overflow-y: scroll; /* selalu tampilkan scroll bar vertikal */
 }
 
+
 body {
     background: var(--bg-color);
     color: var(--text-color);
@@ -416,7 +417,12 @@ span {
     }
 }
 
-.navbar {
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -510,7 +516,4 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
-
 }
-
-
